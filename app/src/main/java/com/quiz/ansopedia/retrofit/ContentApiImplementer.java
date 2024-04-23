@@ -1,16 +1,5 @@
 package com.quiz.ansopedia.retrofit;
 
-import android.content.Context;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.quiz.ansopedia.R;
 import com.quiz.ansopedia.Utility.ApiInterceptor;
 import com.quiz.ansopedia.Utility.ApiService;
@@ -35,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ContentApiImplementer {
     private static Retrofit retrofit;
-    public static String BASE_URL = "https://api.ansopedia.com/api/";
+    public static String BASE_URL = "https://ansopedia-backend.vercel.app/api/";
 //    private static String BASE_URL = "http://192.168.137.42:8000/api/";
 
     private static Retrofit getRetrofit() {
